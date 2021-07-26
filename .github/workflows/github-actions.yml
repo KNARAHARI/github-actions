@@ -80,7 +80,7 @@ jobs:
       uses: google-github-actions/deploy-cloudrun@main
       with:
         service: ${{ secrets.GCP_SA_NAME }}
-        project_id: $ {{ secrets.GCP_PROJECT_ID }}
+        project_id: ${{ secrets.GCP_PROJECT_ID }}
         image: eu.gcr.io/search-playground-8065/gcf/europe-west3/7e79088e-98fc-4c3e-b3c5-7d702989e78f/redirects-health-monitor:latest
         region: europe-west3
         credentials: ${{ secrets.GCP_SA_KEY }}
